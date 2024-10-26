@@ -24,6 +24,20 @@ section {
     padding: 15px 35px;
 }
 
+.title-primary {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.text-primary {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 24px 16px;
+}
+
 /* header */
 
 nav {
@@ -85,6 +99,7 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .banner-content h1 {
@@ -118,6 +133,7 @@ nav ul li {
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
+    border: none;
 }
 
 .ban-input-box button {
@@ -134,21 +150,104 @@ nav ul li {
     max-width: 530px;
 }
 
-.popular-tour-content>p,
 .popular-tour-content>ul>li {
-    color: #5A5A5D;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 26px;
-    margin: 24px 16px;
     list-style-position: inside;
 }
 
-.popular-tour-content>h2 {
-    color: #131318;
-    font-size: 2.5rem;
-    font-weight: 800;
+/* destination-section styles */
+.destination-section>h2,
+.destination-section p {
+    text-align: center;
 }
+
+.destination-section p {
+    margin-bottom: 50px;
+}
+
+.destination-section>h2 {
+    margin-bottom: 24px;
+}
+
+
+.destinal {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+    position: absolute;
+}
+
+.img-1 {
+    grid-area: maldives;
+    position: relative;
+}
+
+.destin {
+    top: 45%;
+    left: 20%;
+}
+
+.img-2 {
+    position: relative;
+    grid-area: indonesia;
+}
+
+.img-3 {
+    position: relative;
+    grid-area: srilanka;
+}
+
+.destin-sri {
+    top: 44%;
+    left: 11%;
+}
+
+.img-4 {
+    position: relative;
+    grid-area: north;
+}
+
+.destin-north {
+    top: 44%;
+    left: 12.3%;
+}
+
+.img-5 {
+    position: relative;
+    grid-area: kashmir;
+}
+
+.destin-kash {
+    top: 44%;
+    left: 7.4%;
+}
+
+.img-6 {
+    position: relative;
+    grid-area: bangla;
+}
+
+.destin-bangla {
+    top: 45%;
+    left: 32%;
+}
+
+.img-7 {
+    position: relative;
+    grid-area:bandar;
+}
+.destin-bandar {
+    top: 45%;
+    left: 40%;
+}
+.destination-img {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.destination-img img {
+    width: 100%;
+}
+
 
 
 
@@ -244,6 +343,7 @@ nav ul li {
     .popular-tour-section {
         margin-top: 30px;
     }
+
     .popular-tour-content {
         max-width: none;
     }
