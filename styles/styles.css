@@ -13,6 +13,12 @@ section {
     max-width: 1170px;
 }
 
+.text-primary-light {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 .btn-primary {
     color: #FFF;
@@ -160,6 +166,7 @@ nav ul li {
 .popular-tour-content {
     max-width: 530px;
 }
+
 .popular-tour-content ul li {
     margin-bottom: 16px;
 }
@@ -253,7 +260,7 @@ nav ul li {
     align-items: center;
 }
 
-.hotel-card {   
+.hotel-card {
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
@@ -270,11 +277,6 @@ nav ul li {
     margin-bottom: 16px;
 }
 
-.service-card p {
-    color: #5A5A5D;
-    font-size: 16px;
-    font-weight: 400;
-}
 
 .service-card {
     padding: 32px 55px 32px 32px;
@@ -294,6 +296,73 @@ nav ul li {
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* discount-deal section styles */
+
+.discount-deal {
+    background: url('../Images/Group\ 39.png');
+    min-height: 500px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 48px 0 24px 0;
+}
+
+.discount-deal-2 {
+    background: url('..//Images/Group\ 40.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 48px 0 24px 0;
+}
+
+.discount-card-2 {
+    position: absolute;
+    margin: 50px 535px 55px 56px;
+    padding: 50px 72px 50px 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+.time-location {
+    display: flex;
+    gap: 24px;
+}
+
+.time-location p {
+    display: flex;
+    gap: 8px;
+}
+
+.discount-content h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 26px 0 16px 0;
+}
+
+.discount-content p {
+    margin-bottom: 16px;
+}
+
+.discount-content h4 {
+    margin-bottom: 1.5rem;
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.discount-card {
+    position: absolute;
+    margin: 50px 56px 55px 535px;
+    padding: 50px 72px 50px 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
 
 /* responsives */
 
@@ -302,6 +371,12 @@ nav ul li {
     .text-primary {
         margin: 10px;
     }
+
+    .title-primary {
+        font-size: 1.25rem;
+        margin-top: 30px;
+    }
+
     .popular-tour,
     nav {
         flex-direction: column;
@@ -360,7 +435,7 @@ nav ul li {
         grid-column: 1/span 12;
     }
 
-    .img-3 {    
+    .img-3 {
         grid-column: 1/span 12;
     }
 
@@ -387,10 +462,40 @@ nav ul li {
     .destination-section h2 {
         margin-top: 24px;
     }
+
     .service-card {
         flex-direction: column;
         width: 90%;
         padding: 32px;
+    }
+
+    .discount-card-2,
+    .discount-card {
+        margin: 16px;
+        padding: 25px;
+    }
+
+    .time-location {
+        flex-wrap: wrap;
+    }
+
+    .discount-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .discount-content p {
+        font-size: 0.875rem;
+    }
+
+    .discount-content h4 {
+        font-size: 1rem;
+    }
+
+    .discount-deal-2,
+    .discount-deal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -398,6 +503,7 @@ nav ul li {
     section {
         margin: 0 20px;
     }
+
     .text-primary {
         margin: 10px;
         max-width: none;
@@ -422,6 +528,10 @@ nav ul li {
         flex-direction: column;
     }
 
+    .destination-section h2 {
+        margin-top: 24px;
+    }
+
     .nav-ul {
         flex-wrap: wrap;
         margin: 50px 0;
@@ -438,7 +548,7 @@ nav ul li {
     .popular-tour-content {
         max-width: none;
     }
-    
+
     .img-1 {
         grid-column: 1/span 7;
     }
@@ -447,7 +557,7 @@ nav ul li {
         grid-column: 8/span 12;
     }
 
-    .img-3 {    
+    .img-3 {
         grid-column: 1/span 7;
     }
 
@@ -465,6 +575,25 @@ nav ul li {
 
     .img-7 {
         grid-column: 1/span 7;
+    }
+
+    .discount-deal-2,
+    .discount-deal {}
+
+    .discount-card-2,
+    .discount-card {
+        margin: 170px  16px 16px 16px;
+        padding: 25px;
+    }
+
+    .time-location {
+        flex-wrap: wrap;
+    }
+    .choose-cards {
+        flex-direction: column;
+    }
+    .service-card {
+        width: 75%;
     }
 
 
