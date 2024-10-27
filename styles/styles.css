@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: gold;
+    color: white;
+}
+
 section {
     margin: 100px auto;
     max-width: 1170px;
@@ -65,12 +70,14 @@ nav {
     margin-top: 50px;
 }
 
-nav h1 {
+
+.main-title {
     font-size: 2.25rem;
     font-weight: 800;
     display: flex;
     gap: 16px;
     cursor: pointer;
+    outline-color: #FF5400;
 }
 
 .black-span {
@@ -403,7 +410,7 @@ nav ul li {
     border-radius: 16px;
     border: 1px solid #FF5400;
     padding: 40px;
-    width:100%;
+    width: 100%;
 }
 
 .newsletter-img img {
@@ -446,7 +453,7 @@ hr {
     margin-bottom: 16px;
     padding: 16px;
     color: rgba(19, 19, 24, 0.30);
-    font-size: 1rem;    
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -454,7 +461,12 @@ hr {
 .seventy-percent h3 {
     margin: 0;
 }
+
 .newsletter-img {
+    position: relative;
+}
+
+.newsletter-img img {
     position: relative;
 }
 
@@ -464,6 +476,7 @@ hr {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
 .seventy-percent h3 {
     color: #FFF;
     font-size: 2rem;
@@ -471,7 +484,7 @@ hr {
 }
 
 .seventy-percent {
-    left:320px;
+    left: 320px;
     bottom: 50px;
     display: inline-block;
     position: absolute;
@@ -479,6 +492,33 @@ hr {
     background: #FF5400;
     transform: rotate(-19.628deg);
     padding: 30px 45px 35px 56px;
+}
+
+/* footer */
+.footer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    gap: 24px;
+
+}
+
+.footer p {
+    max-width: 769px;
+}
+
+footer {
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 110px 0;
+}
+
+.footer h5 {
+    margin-top: 50px;
+    color: #131318;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 /* responsives */
@@ -632,22 +672,50 @@ hr {
     .newsletter-img img {
         width: 100%;
     }
+
     .seventy-percent {
-        left:42%;
+        left: 42%;
         bottom: 15%;
         padding: 30px;
     }
+
     .seventy-percent p {
         font-size: 0.8rem;
     }
+
     .seventy-percent h3 {
         font-size: 1rem;
     }
+
+    .video-ved iframe {
+        border-radius: 16px;
+        height: 350px;
+    }
+    footer {
+        margin-top: 24px;
+        padding: 44px 20px;
+    }   
 }
 
 @media screen and (min-width:640px) and (max-width:1024px) {
     section {
         margin: 0 20px;
+    }
+
+    .newsletter-container,
+    .video-container {
+        flex-direction: column;
+        margin-top: 24px;
+    }
+
+    .newsletter-img img {
+        width: 100%;
+    }
+
+    .video-ved iframe {
+        border-radius: 16px;
+        width: 100%;
+        height: 500px;
     }
 
     .text-primary {
